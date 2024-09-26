@@ -50,3 +50,11 @@ do
     srun gmx_mpi mdrun -v -deffnm ${istep}
     cnt=$(($cnt+1))
 done
+#!/bin/bash
+#SBATCH --nodes=4
+#SBATCH --ntasks-per-node=24
+#SBATCH --cpus-per-task=1
+#SBATCH --time=6:00:00
+#SBATCH --mem=2GB
+#SBATCH --job-name=hellompi
+#SBATCH --output=hellompi.out
