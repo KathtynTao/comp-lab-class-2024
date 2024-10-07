@@ -1,1 +1,5 @@
-Analysis I ran the commend according to the torturial. 
+potential.xvg
+temperature.xvg
+pressure.xvg
+density.xvg
+rmsd.xvg
