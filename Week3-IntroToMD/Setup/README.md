@@ -1,1 +1,1 @@
-according to the tutorial 
+Lysozyme tutorial for Gromacs
