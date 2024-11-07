@@ -1,0 +1,3 @@
+ln: failed to create symbolic link './kalj.lmp': File exists
+ln: failed to create symbolic link './kalj_particles.lmp': File exists
+slurmstepd: error: *** JOB 53129031 ON cs003 CANCELLED AT 2024-11-06T21:29:44 DUE TO TIME LIMIT ***
