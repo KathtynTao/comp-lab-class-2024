@@ -1,1 +1,24 @@
+# Load the topology and coordinates
+mol new Inputs/complex.prmtop
+mol addfile Inputs/complex.inpcrd
+
+# Set the protein representation (New Cartoon)
+mol representation NewCartoon
+mol selection "protein"
+mol color Structure
+mol drawframes 0  # Show only the first frame
+
+# Set the ligand representation (CPK)
+mol representation CPK
+mol selection "not protein and not water and not ion"
+mol color Element
+
+# Center the view on the first ligand (or the one of interest)
+mol view center 1
+
+# Save the image
+render TachyonX Graphics/ligands_in_cpk.png
+
+# Save the script (optional)
+# saveviz viz_topology.vmd
 
